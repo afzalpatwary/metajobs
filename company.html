@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Company</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+	<!-- style css -->
+	<link rel="stylesheet" href="./public/build/fontawesome.css">
+	<link rel="stylesheet" href="./assets/css/select2.min.css">
+	<link rel="stylesheet" href="./assets/css/select2-custom.css">
+	<link rel="stylesheet" href="./public/build/owl.theme.default.min.css">
+	<link rel="stylesheet" href="./public/build/owl.carousel.min.css">
+	<link rel="stylesheet" href="./public/build/styles.css">
+</head>
+
+<body>
+
+	<!-- header -->
+	<header>
+		<nav class="container py-7 bg-white">
+			<div class="flex items-center justify-between">
+				<div class="flex items-center">
+					<a href="#" class="">
+						<img src="assets/img/logo.svg" alt="logo" />
+					</a>
+				</div>
+				<div>
+					<ul
+						class="bg-white w-full z-50 menu-open md:space-x-8 space-x-6 font-semibold hidden absolute left-0 top-20 xl:static xl:flex">
+						<li class="ml-6 xl:ml-0 mb-4 xl:mb-0">
+							<a href="#" class="text-xs text-arsenic font-medium transition-all hover:text-green">
+								Home
+							</a>
+						</li>
+						<li class="ml-0 mb-4 xl:mb-0">
+							<a href="find-job.html"
+								class="text-xs text-arsenic font-medium transition-all hover:text-green">
+								Find Job
+							</a>
+						</li>
+						<li class="ml-0 mb-4 xl:mb-0">
+							<a href="company.html"
+								class="text-xs text-arsenic font-medium transition-all hover:text-green">
+								Company
+							</a>
+						</li>
+						<li class="ml-0 mb-4 xl:mb-0">
+							<a href="candidate.html"
+								class="text-xs text-arsenic font-medium transition-all hover:text-green">
+								Candidate
+							</a>
+						</li>
+						<li class="ml-0 mb-4 xl:mb-0">
+							<a href="#" class="text-xs text-arsenic font-medium transition-all hover:text-green">
+								Career Advice
+							</a>
+						</li>
+						<li class="ml-0 mb-4 xl:mb-0">
+							<a href="#" class="text-xs text-arsenic font-medium transition-all hover:text-green">
+								Contact Us
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<ul class="flex ">
+						<li class="">
+							<a href="#"
+								class="bg-black text-white px-4 py-2 text-xs font-medium rounded-md hover:bg-green transition-all outline-none">
+								Sign In
+							</a>
+						</li>
+
+						<li class="ml-4 hidden md:block">
+							<a href="#"
+								class="bg-green text-white px-4 py-2 text-xs font-medium rounded-md hover:bg-black transition-all outline-none">
+								Sign Up
+							</a>
+						</li>
+						<li>
+							<button class="mobile-toogle flex xl:hidden p-2 rounded-full transition-all outline-none">
+								<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+									fill="currentColor">
+									<path fill-rule="evenodd"
+										d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+										clip-rule="evenodd" />
+								</svg>
+							</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!--/ header -->
+
+
+
+	<!-- banner -->
+	<section class="relative bg-cover bg-center bg-no-repeat"
+		style="background-image: url(assets/img/findjob-banner-bg.svg);">
+		<div class="absolute w-full h-full left-0 top-0 z-2" style="background-color: rgba(0, 124, 50, 0.7);"></div>
+		<div class="container p-16">
+			<div class="w-10/12 m-auto z-4 relative pt-10 pb-7">
+				<div class="text-center">
+					<h1 class="text-xxl xl:text-xxxl font-bold text-white text-center leading-none mb-6">
+						All Companies
+					</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/ banner -->
+
+
+
+
+	<!-- findJob -->
+	<section class="pt-16 pb-20 bg-light">
+		<div class="container 2xl:px-0">
+			<div class="xl:grid grid-cols-12 gap-6">
+				<div class="col-span-3 bg-white rounded-lg" style="max-height: 520px;">
+					<div class="p-6 flex justify-between border-b border-gray">
+						<p class="text-xs font-bold text-black leading-4">
+							Search Filter
+						</p>
+						<button type="button" class="text-xss1 font-normal text-black leading-4">
+							Clear
+						</button>
+					</div>
+					<div class="p-6">
+						<form class="">
+							<div class="mb-4">
+								<input class="bg-light rounded-md w-full py-4 px-6 leading-tight focus:outline-none"
+									type="text" placeholder="Company Name" />
+							</div>
+							<div class="jobCategorise pb-4">
+								<select
+									class="select2-init bg-light text-xxs text-deep font-normal focus-visible:white focus:outline-none">
+									<option selected>Industry</option>
+									<option value="1">Industry 1</option>
+									<option value="2">Industry 2</option>
+									<option value="3">Industry 3</option>
+								</select>
+							</div>
+							<div class="jobCategorise pb-4">
+								<select
+									class="select2-init bg-light text-xxs text-deep font-normal focus-visible:white focus:outline-none">
+									<option selected>Company Size</option>
+									<option value="1">Size 1</option>
+									<option value="2">Size 2</option>
+									<option value="3">Size 3</option>
+								</select>
+							</div>
+							<div class="jobCategorise pb-4">
+								<select
+									class="select2-init bg-light text-xxs text-deep font-normal focus-visible:white focus:outline-none">
+									<option selected>AVG. Salary</option>
+									<option value="1">30k</option>
+									<option value="2">45k</option>
+									<option value="3">55k</option>
+								</select>
+							</div>
+							<div class="jobCategorise pb-4">
+								<select
+									class="select2-init bg-light text-xxs text-deep font-normal focus-visible:white focus:outline-none">
+									<option selected>Revenue</option>
+									<option value="1">Revenue</option>
+									<option value="2">Revenue</option>
+									<option value="3">5Revenue</option>
+								</select>
+							</div>
+						</form>
+						<div class="text-center pt-2 pb-4">
+							<button type="button"
+								class="w-full bg-green text-white px-6 py-4 text-xs font-medium rounded-md hover:bg-black transition-all outline-none">
+								Search Company
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-span-9">
+					<div
+						class="bg-white py-2 rounded-md md:flex flex-wrap justify-between items-center mb-6 py-4 md:py-2">
+						<p class="text-xs font-bold text-black leading-4 px-6 mb-6 md:mb-0">
+							We have found <span class="text-green">123</span> Company
+						</p>
+						<div class="text-center mr-2">
+							<button type="button"
+								class="w-auto bg-green text-white px-6 py-3 text-xss font-medium rounded-md hover:bg-black transition-all outline-none">
+								Add Your Company
+							</button>
+						</div>
+					</div>
+
+					<div class="grid gap-6 xl:gap-6 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
+						<div
+							class="relative bg-white p-6 border-white border border-solid transition-all rounded-md group hover:border-green">
+							<div class="text-center pt-4 pb-6">
+								<div class="flex justify-center mb-2">
+									<img class="mb-4" src="assets/img/cm-logo1.png" alt="img" />
+								</div>
+								<h3 class="text-xs font-normal text-black leading-6 mb-0">
+									Company Name Here
+								</h3>
+								<p class="text-deep text-xss1 font-normal mb-2 leading-6">
+									Short Text About Company Lorem Ipsum
+								</p>
+								<div class="">
+									<ul class="flex flex-wrap justify-center">
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star-disable.svg" alt="icon" />
+											</a>
+										</li>
+										<li class="ml-2">
+											<a class="text-xss1 text-black leading-5" href="#">
+												4.8 (1234)
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="px-2">
+								<ul class="mb-6">
+									<li class="mb-3">
+										<p class="flex gap-3 items-center text-deep text-xss1 font-normal">
+											<img class="" src="assets/img/users1.svg" alt="img" />
+											40-50 Employee
+										</p>
+									</li>
+									<li class="mb-3">
+										<p class="flex gap-3 items-center text-deep text-xss1 font-normal">
+											<img class="" src="assets/img/dollar-sign3.svg" alt="img" />
+											$100K Revenue
+										</p>
+									</li>
+									<li class="mb-0">
+										<p class="flex gap-3 items-center text-deep text-xss1 font-normal">
+											<img class="" src="assets/img/map-pin1.svg" alt="img" />
+											Company Location Lorem Ipsum Text
+										</p>
+									</li>
+								</ul>
+								<div
+									class="text-center py-3 px-6 bg-light rounded-md transition-all group-hover:bg-green">
+									<a href="company-profile.html"
+										class="leading-4 text-deep transition-all font-medium text-xs group-hover:text-white">
+										See Details
+									</a>
+								</div>
+							</div>
+						</div>
+						<div
+							class="relative bg-white p-6 border-white border border-solid transition-all rounded-md group hover:border-green">
+							<div class="text-center pt-4 pb-6">
+								<div class="flex justify-center mb-2">
+									<img class="mb-4" src="assets/img/cm-logo5.png" alt="img" />
+								</div>
+								<h3 class="text-xs font-normal text-black leading-6 mb-0">
+									Company Name Here
+								</h3>
+								<p class="text-deep text-xss1 font-normal mb-2 leading-6">
+									Short Text About Company Lorem Ipsum
+								</p>
+								<div class="">
+									<ul class="flex flex-wrap justify-center">
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star-disable.svg" alt="icon" />
+											</a>
+										</li>
+										<li class="ml-2">
+											<a class="text-xss1 text-black leading-5" href="#">
+												4.8 (1234)
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="px-2">
+								<ul class="mb-6">
+									<li class="mb-3">
+										<p class="flex gap-3 items-center text-deep text-xss1 font-normal">
+											<img class="" src="assets/img/users1.svg" alt="img" />
+											40-50 Employee
+										</p>
+									</li>
+									<li class="mb-3">
+										<p class="flex gap-3 items-center text-deep text-xss1 font-normal">
+											<img class="" src="assets/img/dollar-sign3.svg" alt="img" />
+											$100K Revenue
+										</p>
+									</li>
+									<li class="mb-0">
+										<p class="flex gap-3 items-center text-deep text-xss1 font-normal">
+											<img class="" src="assets/img/map-pin1.svg" alt="img" />
+											Company Location Lorem Ipsum Text
+										</p>
+									</li>
+								</ul>
+								<div
+									class="text-center py-3 px-6 bg-light rounded-md transition-all group-hover:bg-green">
+									<a href="company-profile.html"
+										class="leading-4 text-deep transition-all font-medium text-xs group-hover:text-white">
+										See Details
+									</a>
+								</div>
+							</div>
+						</div>
+						<div
+							class="relative bg-white p-6 border-white border border-solid transition-all rounded-md group hover:border-green">
+							<div class="text-center pt-4 pb-6">
+								<div class="flex justify-center mb-2">
+									<img class="mb-4" src="assets/img/cm-logo2.png" alt="img" />
+								</div>
+								<h3 class="text-xs font-normal text-black leading-6 mb-0">
+									Company Name Here
+								</h3>
+								<p class="text-deep text-xss1 font-normal mb-2 leading-6">
+									Short Text About Company Lorem Ipsum
+								</p>
+								<div class="">
+									<ul class="flex flex-wrap justify-center">
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star-disable.svg" alt="icon" />
+											</a>
+										</li>
+										<li class="ml-2">
+											<a class="text-xss1 text-black leading-5" href="#">
+												4.8 (1234)
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="px-2">
+								<ul class="mb-6">
+									<li class="mb-3">
+										<p class="flex gap-3 items-center text-deep text-xss1 font-normal">
+											<img class="" src="assets/img/users1.svg" alt="img" />
+											40-50 Employee
+										</p>
+									</li>
+									<li class="mb-3">
+										<p class="flex gap-3 items-center text-deep text-xss1 font-normal">
+											<img class="" src="assets/img/dollar-sign3.svg" alt="img" />
+											$100K Revenue
+										</p>
+									</li>
+									<li class="mb-0">
+										<p class="flex gap-3 items-center text-deep text-xss1 font-normal">
+											<img class="" src="assets/img/map-pin1.svg" alt="img" />
+											Company Location Lorem Ipsum Text
+										</p>
+									</li>
+								</ul>
+								<div
+									class="text-center py-3 px-6 bg-light rounded-md transition-all group-hover:bg-green">
+									<a href="company-profile.html"
+										class="leading-4 text-deep transition-all font-medium text-xs group-hover:text-white">
+										See Details
+									</a>
+								</div>
+							</div>
+						</div>
+						<div
+							class="relative bg-white p-6 border-white border border-solid transition-all rounded-md group hover:border-green">
+							<div class="text-center pt-4 pb-6">
+								<div class="flex justify-center mb-2">
+									<img class="mb-4" src="assets/img/cm-logo3.png" alt="img" />
+								</div>
+								<h3 class="text-xs font-normal text-black leading-6 mb-0">
+									Company Name Here
+								</h3>
+								<p class="text-deep text-xss1 font-normal mb-2 leading-6">
+									Short Text About Company Lorem Ipsum
+								</p>
+								<div class="">
+									<ul class="flex flex-wrap justify-center">
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star-disable.svg" alt="icon" />
+											</a>
+										</li>
+										<li class="ml-2">
+											<a class="text-xss1 text-black leading-5" href="#">
+												4.8 (1234)
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="px-2">
+								<ul class="mb-6">
+									<li class="mb-3">
+										<p class="flex gap-3 items-center text-deep text-xss1 font-normal">
+											<img class="" src="assets/img/users1.svg" alt="img" />
+											40-50 Employee
+										</p>
+									</li>
+									<li class="mb-3">
+										<p class="flex gap-3 items-center text-deep text-xss1 font-normal">
+											<img class="" src="assets/img/dollar-sign3.svg" alt="img" />
+											$100K Revenue
+										</p>
+									</li>
+									<li class="mb-0">
+										<p class="flex gap-3 items-center text-deep text-xss1 font-normal">
+											<img class="" src="assets/img/map-pin1.svg" alt="img" />
+											Company Location Lorem Ipsum Text
+										</p>
+									</li>
+								</ul>
+								<div
+									class="text-center py-3 px-6 bg-light rounded-md transition-all group-hover:bg-green">
+									<a href="company-profile.html"
+										class="leading-4 text-deep transition-all font-medium text-xs group-hover:text-white">
+										See Details
+									</a>
+								</div>
+							</div>
+						</div>
+						<div
+							class="relative bg-white p-6 border-white border border-solid transition-all rounded-md group hover:border-green">
+							<div class="text-center pt-4 pb-6">
+								<div class="flex justify-center mb-2">
+									<img class="mb-4" src="assets/img/cm-logo4.png" alt="img" />
+								</div>
+								<h3 class="text-xs font-normal text-black leading-6 mb-0">
+									Company Name Here
+								</h3>
+								<p class="text-deep text-xss1 font-normal mb-2 leading-6">
+									Short Text About Company Lorem Ipsum
+								</p>
+								<div class="">
+									<ul class="flex flex-wrap justify-center">
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star-disable.svg" alt="icon" />
+											</a>
+										</li>
+										<li class="ml-2">
+											<a class="text-xss1 text-black leading-5" href="#">
+												4.8 (1234)
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="px-2">
+								<ul class="mb-6">
+									<li class="mb-3">
+										<p class="flex gap-3 items-center text-deep text-xss1 font-normal">
+											<img class="" src="assets/img/users1.svg" alt="img" />
+											40-50 Employee
+										</p>
+									</li>
+									<li class="mb-3">
+										<p class="flex gap-3 items-center text-deep text-xss1 font-normal">
+											<img class="" src="assets/img/dollar-sign3.svg" alt="img" />
+											$100K Revenue
+										</p>
+									</li>
+									<li class="mb-0">
+										<p class="flex gap-3 items-center text-deep text-xss1 font-normal">
+											<img class="" src="assets/img/map-pin1.svg" alt="img" />
+											Company Location Lorem Ipsum Text
+										</p>
+									</li>
+								</ul>
+								<div
+									class="text-center py-3 px-6 bg-light rounded-md transition-all group-hover:bg-green">
+									<a href="company-profile.html"
+										class="leading-4 text-deep transition-all font-medium text-xs group-hover:text-white">
+										See Details
+									</a>
+								</div>
+							</div>
+						</div>
+						<div
+							class="relative bg-white p-6 border-white border border-solid transition-all rounded-md group hover:border-green">
+							<div class="text-center pt-4 pb-6">
+								<div class="flex justify-center mb-2">
+									<img class="mb-4" src="assets/img/cm-logo7.png" alt="img" />
+								</div>
+								<h3 class="text-xs font-normal text-black leading-6 mb-0">
+									Company Name Here
+								</h3>
+								<p class="text-deep text-xss1 font-normal mb-2 leading-6">
+									Short Text About Company Lorem Ipsum
+								</p>
+								<div class="">
+									<ul class="flex flex-wrap justify-center">
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star-disable.svg" alt="icon" />
+											</a>
+										</li>
+										<li class="ml-2">
+											<a class="text-xss1 text-black leading-5" href="#">
+												4.8 (1234)
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="px-2">
+								<ul class="mb-6">
+									<li class="mb-3">
+										<p class="flex gap-3 items-center text-deep text-xss1 font-normal">
+											<img class="" src="assets/img/users1.svg" alt="img" />
+											40-50 Employee
+										</p>
+									</li>
+									<li class="mb-3">
+										<p class="flex gap-3 items-center text-deep text-xss1 font-normal">
+											<img class="" src="assets/img/dollar-sign3.svg" alt="img" />
+											$100K Revenue
+										</p>
+									</li>
+									<li class="mb-0">
+										<p class="flex gap-3 items-center text-deep text-xss1 font-normal">
+											<img class="" src="assets/img/map-pin1.svg" alt="img" />
+											Company Location Lorem Ipsum Text
+										</p>
+									</li>
+								</ul>
+								<div
+									class="text-center py-3 px-6 bg-light rounded-md transition-all group-hover:bg-green">
+									<a href="company-profile.html"
+										class="leading-4 text-deep transition-all font-medium text-xs group-hover:text-white">
+										See Details
+									</a>
+								</div>
+							</div>
+						</div>
+						<div
+							class="relative bg-white p-6 border-white border border-solid transition-all rounded-md group hover:border-green">
+							<div class="text-center pt-4 pb-6">
+								<div class="flex justify-center mb-2">
+									<img class="mb-4" src="assets/img/cm-logo6.png" alt="img" />
+								</div>
+								<h3 class="text-xs font-normal text-black leading-6 mb-0">
+									Company Name Here
+								</h3>
+								<p class="text-deep text-xss1 font-normal mb-2 leading-6">
+									Short Text About Company Lorem Ipsum
+								</p>
+								<div class="">
+									<ul class="flex flex-wrap justify-center">
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star-disable.svg" alt="icon" />
+											</a>
+										</li>
+										<li class="ml-2">
+											<a class="text-xss1 text-black leading-5" href="#">
+												4.8 (1234)
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="px-2">
+								<ul class="mb-6">
+									<li class="mb-3">
+										<p class="flex gap-3 items-center text-deep text-xss1 font-normal">
+											<img class="" src="assets/img/users1.svg" alt="img" />
+											40-50 Employee
+										</p>
+									</li>
+									<li class="mb-3">
+										<p class="flex gap-3 items-center text-deep text-xss1 font-normal">
+											<img class="" src="assets/img/dollar-sign3.svg" alt="img" />
+											$100K Revenue
+										</p>
+									</li>
+									<li class="mb-0">
+										<p class="flex gap-3 items-center text-deep text-xss1 font-normal">
+											<img class="" src="assets/img/map-pin1.svg" alt="img" />
+											Company Location Lorem Ipsum Text
+										</p>
+									</li>
+								</ul>
+								<div
+									class="text-center py-3 px-6 bg-light rounded-md transition-all group-hover:bg-green">
+									<a href="company-profile.html"
+										class="leading-4 text-deep transition-all font-medium text-xs group-hover:text-white">
+										See Details
+									</a>
+								</div>
+							</div>
+						</div>
+						<div
+							class="relative bg-white p-6 border-white border border-solid transition-all rounded-md group hover:border-green">
+							<div class="text-center pt-4 pb-6">
+								<div class="flex justify-center mb-2">
+									<img class="mb-4" src="assets/img/cm-logo5.png" alt="img" />
+								</div>
+								<h3 class="text-xs font-normal text-black leading-6 mb-0">
+									Company Name Here
+								</h3>
+								<p class="text-deep text-xss1 font-normal mb-2 leading-6">
+									Short Text About Company Lorem Ipsum
+								</p>
+								<div class="">
+									<ul class="flex flex-wrap justify-center">
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star-disable.svg" alt="icon" />
+											</a>
+										</li>
+										<li class="ml-2">
+											<a class="text-xss1 text-black leading-5" href="#">
+												4.8 (1234)
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="px-2">
+								<ul class="mb-6">
+									<li class="mb-3">
+										<p class="flex gap-3 items-center text-deep text-xss1 font-normal">
+											<img class="" src="assets/img/users1.svg" alt="img" />
+											40-50 Employee
+										</p>
+									</li>
+									<li class="mb-3">
+										<p class="flex gap-3 items-center text-deep text-xss1 font-normal">
+											<img class="" src="assets/img/dollar-sign3.svg" alt="img" />
+											$100K Revenue
+										</p>
+									</li>
+									<li class="mb-0">
+										<p class="flex gap-3 items-center text-deep text-xss1 font-normal">
+											<img class="" src="assets/img/map-pin1.svg" alt="img" />
+											Company Location Lorem Ipsum Text
+										</p>
+									</li>
+								</ul>
+								<div
+									class="text-center py-3 px-6 bg-light rounded-md transition-all group-hover:bg-green">
+									<a href="company-profile.html"
+										class="leading-4 text-deep transition-all font-medium text-xs group-hover:text-white">
+										See Details
+									</a>
+								</div>
+							</div>
+						</div>
+						<div
+							class="relative bg-white p-6 border-white border border-solid transition-all rounded-md group hover:border-green">
+							<div class="text-center pt-4 pb-6">
+								<div class="flex justify-center mb-2">
+									<img class="mb-4" src="assets/img/cm-logo2.png" alt="img" />
+								</div>
+								<h3 class="text-xs font-normal text-black leading-6 mb-0">
+									Company Name Here
+								</h3>
+								<p class="text-deep text-xss1 font-normal mb-2 leading-6">
+									Short Text About Company Lorem Ipsum
+								</p>
+								<div class="">
+									<ul class="flex flex-wrap justify-center">
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star1.svg" alt="icon" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="assets/img/star-disable.svg" alt="icon" />
+											</a>
+										</li>
+										<li class="ml-2">
+											<a class="text-xss1 text-black leading-5" href="#">
+												4.8 (1234)
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="px-2">
+								<ul class="mb-6">
+									<li class="mb-3">
+										<p class="flex gap-3 items-center text-deep text-xss1 font-normal">
+											<img class="" src="assets/img/users1.svg" alt="img" />
+											40-50 Employee
+										</p>
+									</li>
+									<li class="mb-3">
+										<p class="flex gap-3 items-center text-deep text-xss1 font-normal">
+											<img class="" src="assets/img/dollar-sign3.svg" alt="img" />
+											$100K Revenue
+										</p>
+									</li>
+									<li class="mb-0">
+										<p class="flex gap-3 items-center text-deep text-xss1 font-normal">
+											<img class="" src="assets/img/map-pin1.svg" alt="img" />
+											Company Location Lorem Ipsum Text
+										</p>
+									</li>
+								</ul>
+								<div
+									class="text-center py-3 px-6 bg-light rounded-md transition-all group-hover:bg-green">
+									<a href="company-profile.html"
+										class="leading-4 text-deep transition-all font-medium text-xs group-hover:text-white">
+										See Details
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="mx-auto px-4 mt-10">
+						<nav class="flex flex-row flex-nowrap justify-between md:justify-center items-center"
+							aria-label="Pagination">
+							<a class="flex justify-center items-center mr-4" href="#" title="Previous Page">
+								<span class="sr-only">Previous Page</span>
+								<img src="assets/img/arrow-left-circle1.svg" alt=" icon" />
+							</a>
+							<a class="flex w-10 h-10 mx-1 text-xs justify-center items-center rounded-md bg-white text-deep hover:bg-green hover:text-white"
+								href="#" title="Page 1">
+								1
+							</a>
+							<a class="flex w-10 h-10 mx-1 text-xs justify-center items-center rounded-md bg-white text-deep hover:bg-green hover:text-white"
+								href="#" title="Page 2">
+								2
+							</a>
+							<a class="flex w-10 h-10 mx-1 text-xs justify-center items-center rounded-md bg-white text-deep hover:bg-green hover:text-white"
+								href="#" aria-current="page" title="Page 3">
+								3
+							</a>
+							<a class="flex w-10 h-10 mx-1 text-xs justify-center items-center rounded-md bg-white text-deep hover:bg-green hover:text-white"
+								href="#" title="Page 4">
+								4
+							</a>
+							<a class="flex w-10 h-10 mx-1 text-xs justify-center items-center rounded-md bg-white text-deep hover:bg-green hover:text-white"
+								href="#" title="Page 5">
+								5
+							</a>
+							<a class="flexjustify-center items-center ml-4" href="#" title="Next Page">
+								<span class="sr-only">Next Page</span>
+								<img src="assets/img/arrow-left-circle.svg" alt=" icon" />
+							</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/ findJob -->
+
+
+
+		<!-- footer -->
+		<footer class="bg-black overflow-hidden">
+			<div class="container relative">
+				<div class="col-span-4 md:absolute left-6 top-16 py-16 md:py-0 text-center">
+					<a href="#">
+						<img class="w-auto mx-auto md:mr-auto" src="assets/img/footerLogo.svg" alt="logo" />
+					</a>
+				</div>
+			</div>
+			<div
+				class="bg-green py-8 sm:grid gap-6 lg:gap-16 items-center grid-cols-12 px-6 sm:px-10  xl:px-20 md:w-8/12 ml-auto mb-16">
+				<div class="z-10 col-span-4 text-center 2xl:text-left mb-8 sm:mb-0">
+					<h3 class="text-lg lg:text-xl xl:text-xxl2 text-white font-bold leading-tight">
+						Subscribe <br class="hidden 2xl:block" />
+						Newsletter
+					</h3>
+				</div>
+				<div class="relative text-center 2xl:-ml-10 2xl:mr-6 col-span-7">
+					<input type="text" placeholder="Enter Your Email"
+						class="w-full focus:outline-none rounded-lg h-20 px-7">
+					<button
+						class="mt-0 px-4 lg:px-8 absolute right-2 top-2 bg-black text-white rounded-md font-semibold h-16"
+						type="button">
+						Subscribe
+					</button>
+				</div>
+			</div>
+	
+			<div class="container">
+				<div class="md:grid gap-8 md:grid-cols-12 pb-14">
+					<div class="xl:col-span-4 lg:col-span-4 md:col-span-12 mb-10 xl:mb-0 xl:pr-10">
+						<h3 class="text-lg text-white font-bold mb-8 leading-4">
+							About Company
+						</h3>
+						<p class="text-xxs font-normal leading-6 mb-6" style="color: rgba(255, 255, 255, 0.7);">
+							Lorem Ipsum is simply dummy text of the <br class="hidden xl:inline" /> printing and
+							typesetting
+							industry. Lorem <br class="hidden xl:inline" /> Ipsum has been
+							the industry's standard <br class="hidden xl:inline" /> dummy text
+						</p>
+						<p class="text-xxs text-white font-normal leading-6 mb-6 flex gap-4 items-center">
+							<img src="assets/img/map-pin5.svg" alt="icon" />
+							Company Location here - Lorem <br class="hidden xl:inline" /> Ipsum is simple Dummy Text
+						</p>
+						<a href="tel:1-202-555-0106"
+							class="text-xxs text-white font-normal leading-6 mb-6 flex gap-4 items-center">
+							<img src="assets/img/call.svg" alt="icon" />
+							1-202-555-0106
+						</a>
+						<a href="mailto:info@example.com"
+							class="text-xxs text-white font-normal leading-6 mb-0 flex gap-4 items-center">
+							<img src="assets/img/mail1.svg" alt="icon" />
+							info@example.com
+						</a>
+					</div>
+					<div class="xl:col-span-3 lg:col-span-4 md:col-span-6 mb-10 xl:mb-0 xl:pl-10">
+						<h3 class="text-lg text-white font-bold mb-8 leading-4">
+							Quick Link
+						</h3>
+						<a href="#"
+							class="text-xs text-whiteLight font-normal leading-6 mb-4 block transition-all duration-300 hover:text-green">
+							Footer Link Here
+						</a>
+						<a href="#"
+							class="text-xs text-whiteLight font-normal leading-6 mb-4 block transition-all duration-300 hover:text-green">
+							Footer Link Here
+						</a>
+						<a href="#"
+							class="text-xs text-whiteLight font-normal leading-6 mb-4 block transition-all duration-300 hover:text-green">
+							Footer Link Here
+						</a>
+						<a href="#"
+							class="text-xs text-whiteLight font-normal leading-6 mb-4 block transition-all duration-300 hover:text-green">
+							Footer Link Here
+						</a>
+						<a href="#"
+							class="text-xs text-whiteLight font-normal leading-6 mb-4 block transition-all duration-300 hover:text-green">
+							Footer Link Here
+						</a>
+						<a href="#"
+							class="text-xs text-whiteLight font-normal leading-6 mb-0 block transition-all duration-300 hover:text-green">
+							Footer Link Here
+						</a>
+					</div>
+					<div class="xl:col-span-3 lg:col-span-4 md:col-span-6 mb-10 xl:mb-0 xl:pl-6">
+						<h3 class="text-lg text-white font-bold mb-8 leading-4">
+							Quick Link
+						</h3>
+						<a href="#"
+							class="text-xs text-whiteLight font-normal leading-6 mb-4 block transition-all duration-300 hover:text-green">
+							Footer Link Here
+						</a>
+						<a href="#"
+							class="text-xs text-whiteLight font-normal leading-6 mb-4 block transition-all duration-300 hover:text-green">
+							Footer Link Here
+						</a>
+						<a href="#"
+							class="text-xs text-whiteLight font-normal leading-6 mb-4 block transition-all duration-300 hover:text-green">
+							Footer Link Here
+						</a>
+						<a href="#"
+							class="text-xs text-whiteLight font-normal leading-6 mb-4 block transition-all duration-300 hover:text-green">
+							Footer Link Here
+						</a>
+						<a href="#"
+							class="text-xs text-whiteLight font-normal leading-6 mb-4 block transition-all duration-300 hover:text-green">
+							Footer Link Here
+						</a>
+						<a href="#"
+							class="text-xs text-whiteLight font-normal leading-6 mb-0 block transition-all duration-300 hover:text-green">
+							Footer Link Here
+						</a>
+					</div>
+					<div class="xl:col-span-2 lg:col-span-4 md:col-span-6 mb-10 xl:mb-0">
+						<h3 class="text-lg text-white font-bold mb-8 leading-4">
+							Quick Link
+						</h3>
+						<a href="#"
+							class="text-xs text-whiteLight font-normal leading-6 mb-4 block transition-all duration-300 hover:text-green">
+							Footer Link Here
+						</a>
+						<a href="#"
+							class="text-xs text-whiteLight font-normal leading-6 mb-4 block transition-all duration-300 hover:text-green">
+							Footer Link Here
+						</a>
+						<a href="#"
+							class="text-xs text-whiteLight font-normal leading-6 mb-4 block transition-all duration-300 hover:text-green">
+							Footer Link Here
+						</a>
+						<a href="#"
+							class="text-xs text-whiteLight font-normal leading-6 mb-4 block transition-all duration-300 hover:text-green">
+							Footer Link Here
+						</a>
+						<a href="#"
+							class="text-xs text-whiteLight font-normal leading-6 mb-4 block transition-all duration-300 hover:text-green">
+							Footer Link Here
+						</a>
+						<a href="#"
+							class="text-xs text-whiteLight font-normal leading-6 mb-0 block transition-all duration-300 hover:text-green">
+							Footer Link Here
+						</a>
+					</div>
+				</div>
+				<div class="flex justify-between py-7" style="border-top: 1px solid rgba(255, 255, 255, 0.2)">
+					<p class="text-xs text-white leading-4">
+						© 2022 Brand Name | All Right Reserved
+					</p>
+					<ul class="social flex gap-6">
+						<li>
+							<a href="#">
+								<svg width="11" height="18" viewBox="0 0 11 18" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.59548 10.125L10.0843 6.86742H7.028V4.75348C7.028 3.86227 7.45494 2.99355 8.82376 2.99355H10.2132V0.220078C10.2132 0.220078 8.95232 0 7.74678 0C5.22984 0 3.58465 1.56023 3.58465 4.38469V6.86742H0.786865V10.125H3.58465V18H7.028V10.125H9.59548Z"
+										fill="white" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M16.1497 5.33381C16.1612 5.4937 16.1612 5.65363 16.1612 5.81352C16.1612 10.6904 12.4493 16.3097 5.66497 16.3097C3.57486 16.3097 1.63325 15.7043 0 14.6536C0.296965 14.6879 0.582469 14.6993 0.890859 14.6993C2.61545 14.6993 4.20303 14.1168 5.4708 13.1232C3.84898 13.0889 2.48984 12.0267 2.02155 10.5648C2.25 10.599 2.47841 10.6219 2.71828 10.6219C3.04949 10.6219 3.38073 10.5762 3.68909 10.4963C1.99874 10.1536 0.730934 8.66884 0.730934 6.8757V6.83003C1.22203 7.10414 1.79314 7.27546 2.39843 7.29827C1.40477 6.63582 0.753785 5.50513 0.753785 4.22593C0.753785 3.54067 0.936492 2.9125 1.25631 2.36427C3.0723 4.60284 5.80201 6.06475 8.86289 6.22467C8.8058 5.95056 8.77152 5.66505 8.77152 5.37952C8.77152 3.3465 10.4162 1.69043 12.4606 1.69043C13.5228 1.69043 14.4822 2.13586 15.156 2.8554C15.9898 2.69551 16.7893 2.38712 17.4974 1.96454C17.2233 2.82116 16.6408 3.5407 15.8756 3.99752C16.618 3.91761 17.3375 3.71198 17.9999 3.42648C17.4975 4.15741 16.8693 4.8084 16.1497 5.33381Z"
+										fill="white" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M19.0853 4.36229C18.8672 3.53085 18.2246 2.87603 17.4088 2.6538C15.93 2.25 10.0001 2.25 10.0001 2.25C10.0001 2.25 4.07019 2.25 2.59133 2.6538C1.77547 2.87606 1.1329 3.53085 0.914805 4.36229C0.518555 5.86934 0.518555 9.01364 0.518555 9.01364C0.518555 9.01364 0.518555 12.1579 0.914805 13.665C1.1329 14.4964 1.77547 15.124 2.59133 15.3462C4.07019 15.75 10.0001 15.75 10.0001 15.75C10.0001 15.75 15.9299 15.75 17.4088 15.3462C18.2246 15.124 18.8672 14.4964 19.0853 13.665C19.4816 12.1579 19.4816 9.01364 19.4816 9.01364C19.4816 9.01364 19.4816 5.86934 19.0853 4.36229ZM8.06064 11.8684V6.15885L13.0169 9.01371L8.06064 11.8684Z"
+										fill="white" />
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M3.58143 15.7501H0.264286V5.2349H3.58143V15.7501ZM1.92107 3.80053C0.860357 3.80053 0 2.93568 0 1.89154C7.59214e-09 1.39 0.202398 0.909006 0.562669 0.554365C0.92294 0.199724 1.41157 0.000488281 1.92107 0.000488281C2.43057 0.000488281 2.9192 0.199724 3.27947 0.554365C3.63974 0.909006 3.84214 1.39 3.84214 1.89154C3.84214 2.93568 2.98143 3.80053 1.92107 3.80053ZM15.9964 15.7501H12.6864V10.6314C12.6864 9.41146 12.6614 7.84701 10.9618 7.84701C9.23714 7.84701 8.97286 9.1724 8.97286 10.5435V15.7501H5.65929V5.2349H8.84071V6.66927H8.88714C9.33 5.8431 10.4118 4.97123 12.0257 4.97123C15.3829 4.97123 16 7.1474 16 9.97396V15.7501H15.9964Z"
+										fill="white" />
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<!--/ footer -->
+
+
+
+
+
+	<script src="assets/js/jquery-3.5.1.min.js"></script>
+	<script src="assets/js/select2.min.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+
+</html>

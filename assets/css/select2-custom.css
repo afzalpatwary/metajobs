@@ -1,0 +1,214 @@
+/* select2 css */
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border: none;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    width: 40px;
+    background-position: right center;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 7.34694L10 12.2449L15 7.34694' stroke='%238F9CA9' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #66737f;
+    font-weight: normal;
+    font-size: 16px;
+}
+.select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+.jobCategorise .select2-container--default .select2-selection--single {
+    background: #f2f5f8;
+    border-radius: 6px;
+    height: 50px;
+    line-height: 50px;
+}
+.jobCategorise .select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 50px;
+    padding-left: 25px;
+    color: #8f9ca9;
+}
+.jobCategorise .select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 13px;
+    width: 90px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 10px;
+}
+.jobCategorise .select2-container {
+    width: 277px !important;
+}
+.select2-container {
+    width: auto !important;
+}
+.select2-search--dropdown {
+    display: none;
+}
+.select2-dropdown {
+    border: transparent;
+    padding: 10px;
+}
+.select2-results__option--selectable {
+    font-size: 12px;
+    color: #66737f;
+}
+@media (max-width: 1200px) {
+    form{
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .select2-container {
+        width: auto !important;
+    }
+    .jobCategorise .select2-container {
+        width: 240px !important;
+    }
+}
+
+@media (max-width: 1280px) {
+   .btn-banner button{
+       margin-left: -50px !important;
+   }
+}
+
+
+@media (min-width: 1400px) {
+    .search-wrapper .select2-container .select2-selection--single .select2-selection__rendered{
+        padding-right: 150px;
+    }
+}
+
+
+
+/* slider css */
+.owl-nav button {
+    position: absolute;
+    top: 40%;
+    left: -80px;
+    width: 50px;
+    height: 50px;
+    background: #d5dde5 !important;
+    border-radius: 50% !important;
+    transition: all;
+}
+.owl-nav button:hover {
+    background-color: #1caf57 !important;
+    color: #fff !important;
+}
+.owl-nav .owl-next {
+    left: auto;
+    right: -80px;
+}
+/* .owl-nav button i{
+    line-height: 43px;
+} */
+@media (max-width: 1200px) {
+    .owl-nav {
+        display: none;
+    }
+}
+@media (min-width: 1200px) {
+    .owl-dots {
+        display: none;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1550px) {
+    .owl-nav button {
+        left: 0;
+        top: -25%;
+    }
+    .owl-nav .owl-next {
+        right: 0;
+    }
+}
+.owl-dots {
+    margin-top: 30px;
+}
+
+.single-blog:hover svg:hover * {
+    stroke: #fff !important;
+}
+.social li a:hover svg * {
+    fill: #1caf57;
+}
+
+/* checkbox */
+/* checkItem css */
+.checkItem {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #66737F;
+}
+
+/* Hide the browser's default checkbox */
+.checkItem input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #D5DDE5;
+    border-radius: 3px;
+}
+
+/* On mouse-over, add a grey background color */
+.checkItem:hover input ~ .checkmark {
+    background: #d5dde5;
+    border-radius: 3px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkItem input:checked ~ .checkmark {
+    background-color: #1caf57;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkItem input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkItem .checkmark:after {
+    left: 8px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+ol li span.left-2 {
+    left: 0.4rem;
+}
